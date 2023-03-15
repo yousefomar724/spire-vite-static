@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Almarai';
+  src: url('./fonts/Almarai-Regular.woff');
+}
+.no-select {
+  touch-action: pan-y pan-x !important;
+}
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+}
+
+.swiper-pagination-bullet {
+  width: 25px !important;
+  height: 8px !important;
+  text-align: center;
+  border-radius: 10px !important;
+  font-size: 12px;
+  color: #000;
+  opacity: 1;
+  background-color: gray !important;
+}
+.swiper-pagination-bullet-active {
+  width: 40px !important;
+  position: relative;
+  background-color: #27aae1 !important;
+  opacity: 1 !important;
+}
